@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>在此献给国庆的三天</title>
+	<link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/jquery-ui.js"></script>
+    <script type="text/javascript">
+ var winWidth = 0;
+ var winHeight = 0;
+ function findDimensions() //函数：获取页面尺寸
+ {
+   //获取窗口宽度
+   if (window.innerWidth)
+      winWidth = window.innerWidth;
+   else if ((document.body) && (document.body.clientWidth))
+      winWidth = document.body.clientWidth;
+   //获取窗口高度
+   if (window.innerHeight)
+      winHeight = window.innerHeight;
+   else if ((document.body) && (document.body.clientHeight))
+      winHeight = document.body.clientHeight;
+    
+   //通过深入Document内部对body进行检测，获取窗口大小
+   if (document.documentElement  && document.documentElement.clientHeight &&
+             document.documentElement.clientWidth)
+   {
+    winHeight = document.documentElement.clientHeight;
+    winWidth = document.documentElement.clientWidth;
+   }
+   //在这里写你的处理函数，winWidth和winHeight这两个全局变量分别是页面宽度和高度
+   
+ }
+ findDimensions();                  //调用函数，获取数值
+ window.onresize=findDimensions;    //绑定窗口尺寸改变事件
+</script>
+    <script type="text/javascript">
+    function mySubmit1 () {
+    	document.form1.submit();
+    }
+    function mySubmit2 () {
+    	document.form2.submit();
+    }
+    </script>
+    <script>
+  $(function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  });
+  </script>
+</head>
+<body>
+	<div class="head">
+		<img src="images/logo.png" alt="" />
+		<img src="images/text.png" alt="" />
+	</div>
+	<div class="left" id="left">
+		<div class="left_list">
+			<ul>
+				<li><a href="">签到</a></li>
+				<li><a href="">未完成事项</a></li>
+				<li><a href="">新问题记录</a></li>
+				<li><a href="">问题总览</a></li>
+			</ul>
+		</div>
+		<div class="left_bottom">
+			<ul>
+				<li><a href="">关于</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="right">
+		<div class="right_1">
+		<form action="reg" name="form1">
+			<ul>
+				<li>所在部门&nbsp;:&nbsp;
+					<select style="width:30%;height:30px">  
+						<option value ="1">一部</option>  
+						<option value ="2">二部</option>  
+						<option value ="3">三部</option>
+					</select>
+				</li>
+				<li class="ui-widget">姓名&nbsp;:&nbsp;<input type="" id="tags" style="width:150px;" />
+					</select></li>
+				<li><div class="right_1_button"><a href="javascript:mySubmit1 ()">开始值班</a></div></li>
+			</ul>
+			</form>
+		</div>
+		<div class="right_2">
+		<div class="right_2_1">
+		<ul><li>正在值班&nbsp;:&nbsp;</li></ul><li></li><li></li></div>
+		<div class="right_2_2">
+		<form name="form2" action="">
+								<ul>
+								<li><input type='checkbox' name='VoteOption1' value=1>运行一部——2321</li>
+								<li><input type='checkbox' name='VoteOption1' value=1>运行一部——2321</li>
+								<li><input type='checkbox' name='VoteOption1' value=1>运行一部——2321</li>
+								<li></li>
+								</ul>
+								<ul>
+								<li><input type='checkbox' name='VoteOption1' value=1>运行一部——2321</li>
+								<li><input type='checkbox' name='VoteOption1' value=1>运行一部——2321</li>
+								<li><input type='checkbox' name='VoteOption1' value=1>运行一部——2321</li>
+								<li></li>
+								</ul>
+								<ul>
+								<li><input type='checkbox' name='VoteOption1' value=1>运行一部——2321</li>
+								<li><input type='checkbox' name='VoteOption1' value=1>运行一部——2321</li>
+								<li><input type='checkbox' name='VoteOption1' value=1>运行一部——2321</li>
+								<li></li>
+								</ul>
+								<div class="right_2_button"><a href="javascript:mySubmit2 ()" >结束值班</a></div>
+								</form>
+								</div>		</div>
+		<div class="right_3">
+			<div class="right_3_1">
+		<ul><li>值班记录&nbsp;:&nbsp;</li></ul><li></li><li><a href="">上一页</a>&nbsp;&nbsp;<a href="">下一页</a></li>
+		</div>
+		<div class="right_3_2">
+		<ul><li>所在部门</li><li>姓名</li><li>开始时间</li><li>结束时间</li></ul>
+		<ul><li>逗比一部</li><li>2000</li><li>1999.9.9</li><li>2009.9.9</li></ul>
+		<ul><li>逗比二部</li><li>鼠大</li><li>1999.9.9</li><li>2009.9.9</li></ul>
+		<ul><li>逗比三部</li><li>牛二</li><li>1999.9.9</li><li>2009.9.9</li></ul>
+		<ul><li>逗比四部</li><li>虎三</li><li>1999.9.9</li><li>2009.9.9</li></ul>
+		<ul><li>逗比五部</li><li>兔四</li><li>1999.9.9</li><li>2009.9.9</li></ul>
+		<ul><li>逗比六部</li><li>龙五</li><li>1999.9.9</li><li>2009.9.9</li></ul>
+		<ul><li>逗比七部</li><li>蛇六</li><li>1999.9.9</li><li>2009.9.9</li></ul>
+		<ul><li>逗比八部</li><li>马七</li><li>1999.9.9</li><li>2009.9.9</li></ul>
+		<ul><li>逗比九部</li><li>羊八</li><li>1999.9.9</li><li>2009.9.9</li></ul>
+		<ul><li>逗比十部</li><li>猴九</li><li>1999.9.9</li><li>2009.9.9</li></ul>
+		</div>
+		<div class="right_3_3">
+		        <ul><li></li><li></li></ul>
+		        </div>
+		</div>
+	</div>
+</body>
+</html>

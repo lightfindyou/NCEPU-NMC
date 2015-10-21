@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - nmcTracker@59.67.225.80" uuid="b91c28d5-e020-407f-8766-43038ba19f8e">
+    <database-info product="MySQL" version="5.5.20" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="nmctracker"/>
+    <table name="issue" schema="" catalog="nmctracker" type="TABLE">
+      <column name="idissue" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="issueText" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="idissue"/>
+      <exported-key name="issueDetail" table="solution" schema="" catalog="nmctracker" columns="idIssue"/>
+    </table>
+    <table name="issue_and_solution" schema="" catalog="nmctracker" type="VIEW">
+      <column name="issueText" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="solutionText" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+    </table>
+    <table name="log" schema="" catalog="nmctracker" type="TABLE">
+      <column name="idlog" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="time" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="5o6l5Yiw6Zeu6aKY5pe26Ze0"/>
+      <column name="userId" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="55So5oi35ZCN"/>
+      <column name="userName" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="55So5oi35aeT5ZCN"/>
+      <column name="building" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="room" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="5oi/6Ze05Y+3"/>
+      <column name="phone" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="6IGU57O75Y+356CB"/>
+      <column name="issue" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="6Zeu6aKY5o+P6L+w"/>
+      <column name="getPerson" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="5o6l55S16K+d5Lq6"/>
+      <column name="isOver" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="5piv5ZCm6Kej5Yaz"/>
+      <column name="solvePerson" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="6Kej5Yaz5Lq6"/>
+      <column name="solution" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="solveTime" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="6Kej5Yaz5pe26Ze0"/>
+      <primary-key name="PRIMARY" columns="idlog"/>
+    </table>
+    <table name="member" schema="" catalog="nmctracker" type="TABLE">
+      <column name="memberId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5oiQ5ZGYSUQ=" autoIncrement="true"/>
+      <column name="memberName" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="5oiQ5ZGY5ZCN"/>
+      <column name="department" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="5omA5bGe6YOo6Zeo"/>
+      <primary-key name="PRIMARY" columns="memberId"/>
+    </table>
+    <table name="registration" schema="" catalog="nmctracker" type="TABLE">
+      <column name="registraionId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="562+5Yiw5bqP5Y+3" autoIncrement="true"/>
+      <column name="memberName" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="5oiQ5ZGY5ZCN"/>
+      <column name="firstRegist" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="5byA5aeL5pe26Ze0"/>
+      <column name="lastRegist" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="57uT5p2f5pe26Ze0"/>
+      <column name="remark" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" remarks="5aSH5rOo"/>
+      <primary-key name="PRIMARY" columns="registraionId"/>
+      <index name="memberDetail_idx" unique="false" columns="memberName"/>
+    </table>
+    <table name="solution" schema="" catalog="nmctracker" type="TABLE">
+      <column name="idsolution" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="idIssue" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="solutionText" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="idsolution"/>
+      <foreign-key name="issueDetail" columns="idIssue" ref-table="issue" ref-schema="" ref-catalog="nmctracker" ref-columns="idissue" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="issueDetail_idx" unique="false" columns="idIssue"/>
+    </table>
+    <table name="undo" schema="" catalog="nmctracker" type="VIEW">
+      <column name="userId" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="55So5oi35ZCN"/>
+      <column name="userName" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="55So5oi35aeT5ZCN"/>
+      <column name="building" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="room" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="5oi/6Ze05Y+3"/>
+      <column name="phone" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="6IGU57O75Y+356CB"/>
+      <column name="issue" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="6Zeu6aKY5o+P6L+w"/>
+    </table>
+  </data-source>
+</component>
