@@ -46,13 +46,13 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.892858">
-              <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+            <state vertical-scroll-proportion="-11.875">
+              <caret line="19" column="52" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="52" />
               <folding>
-                <marker date="1445442199885" expanded="true" signature="791:860" placeholder="select disti..member..." />
-                <marker date="1445442199885" expanded="true" signature="994:1023" placeholder="SELECT membe..member..." />
-                <marker date="1445442199885" expanded="true" signature="4559:4629" placeholder="SELECT * FRO..registration..." />
-                <marker date="1445442199885" expanded="true" signature="5783:6038" placeholder="select membe..member..." />
+                <marker date="1446286585626" expanded="true" signature="809:878" placeholder="select disti..member..." />
+                <marker date="1446286585626" expanded="true" signature="1021:1050" placeholder="SELECT membe..member..." />
+                <marker date="1446286585626" expanded="true" signature="5351:5421" placeholder="SELECT * FRO..registration..." />
+                <marker date="1446286585626" expanded="true" signature="6813:7072" placeholder="select membe..member..." />
               </folding>
             </state>
           </provider>
@@ -61,10 +61,10 @@
       <file leaf-file-name="EndDuty.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/EndDuty.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.357143">
-              <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+            <state vertical-scroll-proportion="-10.625">
+              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
               <folding>
-                <marker date="1445442201166" expanded="true" signature="955:1057" placeholder="UPDATE nmctr..." />
+                <marker date="1446286563829" expanded="true" signature="952:1054" placeholder="UPDATE nmctr..." />
               </folding>
             </state>
           </provider>
@@ -73,7 +73,7 @@
       <file leaf-file-name="jilu.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/jilu.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.071428">
+            <state vertical-scroll-proportion="0.0">
               <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
               <folding />
             </state>
@@ -83,11 +83,55 @@
       <file leaf-file-name="sublmitRegistion.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/sublmitRegistion.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8403756">
-              <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.565762">
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
               <folding>
-                <marker date="1445442199826" expanded="true" signature="975:1067" placeholder="INSERT INTO ..." />
+                <marker date="1446286585630" expanded="true" signature="997:1054" placeholder="SELECT membe..member..." />
+                <marker date="1446286585630" expanded="true" signature="1246:1301" placeholder="SELECT onlin..online..." />
+                <marker date="1446286585630" expanded="true" signature="1246:1310" placeholder="SELECT onlin..online..." />
+                <marker date="1446286585630" expanded="true" signature="1246:1313" placeholder="SELECT onlin..online..." />
+                <marker date="1446286585630" expanded="true" signature="1584:1676" placeholder="INSERT INTO ..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nmctracker.registration" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/44d102e4/b91c28d5-e020-407f-8766-43038ba19f8e/nmctracker..registration">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b91c28d5-e020-407f-8766-43038ba19f8e/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="57" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nmctracker.online" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/44d102e4/b91c28d5-e020-407f-8766-43038ba19f8e/nmctracker..online">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,8 +171,8 @@
         <option value="dbtable:/42433731/b91c28d5-e020-407f-8766-43038ba19f8e/nmctracker..registration" />
         <option value="dbtable:/42433731/b91c28d5-e020-407f-8766-43038ba19f8e/nmctracker..member" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/b91c28d5-e020-407f-8766-43038ba19f8e/console.sql" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/EndDuty.jsp" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/sublmitRegistion.jsp" />
       </list>
     </option>
@@ -136,6 +180,13 @@
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -148,10 +199,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="y" value="27" />
+    <option name="width" value="1920" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -176,8 +226,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -274,7 +324,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -654,15 +704,17 @@
       <workItem from="1445403763209" duration="4897000" />
       <workItem from="1445441878708" duration="36000" />
       <workItem from="1445442097043" duration="316000" />
+      <workItem from="1446284514186" duration="1860000" />
+      <workItem from="1446286516958" duration="86000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66133000" />
+    <option name="totallyTimeSpent" value="68079000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -672,24 +724,24 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41292444" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5748032" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2635432" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2631016" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16544656" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16524065" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44456178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44359255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -715,15 +767,124 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/sublmitRegistion.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="115" selection-start-line="31" selection-start-column="115" selection-end-line="31" selection-end-column="115" />
+          <folding>
+            <marker date="1446286585630" expanded="true" signature="997:1054" placeholder="SELECT membe..member..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1301" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1310" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1313" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1584:1676" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/44d102e4/b91c28d5-e020-407f-8766-43038ba19f8e/nmctracker..registration">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b91c28d5-e020-407f-8766-43038ba19f8e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="57" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/44d102e4/b91c28d5-e020-407f-8766-43038ba19f8e/nmctracker..online">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding>
+            <marker date="1446286585626" expanded="true" signature="809:878" placeholder="select disti..member..." />
+            <marker date="1446286585626" expanded="true" signature="1021:1050" placeholder="SELECT membe..member..." />
+            <marker date="1446286585626" expanded="true" signature="5351:5421" placeholder="SELECT * FRO..registration..." />
+            <marker date="1446286585626" expanded="true" signature="6813:7072" placeholder="select membe..member..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/EndDuty.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+          <folding>
+            <marker date="1446286563829" expanded="true" signature="952:1054" placeholder="UPDATE nmctr..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jilu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/sublmitRegistion.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding>
+            <marker date="1446286585630" expanded="true" signature="997:1054" placeholder="SELECT membe..member..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1301" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1310" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1313" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1584:1676" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1445442199885" expanded="true" signature="791:860" placeholder="select disti..member..." />
-            <marker date="1445442199885" expanded="true" signature="994:1023" placeholder="SELECT membe..member..." />
-            <marker date="1445442199885" expanded="true" signature="4559:4629" placeholder="SELECT * FRO..registration..." />
-            <marker date="1445442199885" expanded="true" signature="5783:6038" placeholder="select membe..member..." />
+            <marker date="1446286585626" expanded="true" signature="809:878" placeholder="select disti..member..." />
+            <marker date="1446286585626" expanded="true" signature="1021:1050" placeholder="SELECT membe..member..." />
+            <marker date="1446286585626" expanded="true" signature="5351:5421" placeholder="SELECT * FRO..registration..." />
+            <marker date="1446286585626" expanded="true" signature="6813:7072" placeholder="select membe..member..." />
           </folding>
         </state>
       </provider>
@@ -733,7 +894,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
           <folding>
-            <marker date="1445442201166" expanded="true" signature="955:1057" placeholder="UPDATE nmctr..." />
+            <marker date="1446286563829" expanded="true" signature="952:1054" placeholder="UPDATE nmctr..." />
           </folding>
         </state>
       </provider>
@@ -751,7 +912,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <marker date="1445442199826" expanded="true" signature="975:1067" placeholder="INSERT INTO ..." />
+            <marker date="1446286585630" expanded="true" signature="997:1054" placeholder="SELECT membe..member..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1301" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1310" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1313" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1584:1676" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -777,7 +942,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
           <folding>
-            <marker date="1445442199826" expanded="true" signature="975:1067" placeholder="INSERT INTO ..." />
+            <marker date="1446286585630" expanded="true" signature="997:1054" placeholder="SELECT membe..member..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1301" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1310" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1313" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1584:1676" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -795,10 +964,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1445442199885" expanded="true" signature="791:860" placeholder="select disti..member..." />
-            <marker date="1445442199885" expanded="true" signature="994:1023" placeholder="SELECT membe..member..." />
-            <marker date="1445442199885" expanded="true" signature="4559:4629" placeholder="SELECT * FRO..registration..." />
-            <marker date="1445442199885" expanded="true" signature="5783:6038" placeholder="select membe..member..." />
+            <marker date="1446286585626" expanded="true" signature="809:878" placeholder="select disti..member..." />
+            <marker date="1446286585626" expanded="true" signature="1021:1050" placeholder="SELECT membe..member..." />
+            <marker date="1446286585626" expanded="true" signature="5351:5421" placeholder="SELECT * FRO..registration..." />
+            <marker date="1446286585626" expanded="true" signature="6813:7072" placeholder="select membe..member..." />
           </folding>
         </state>
       </provider>
@@ -808,7 +977,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
           <folding>
-            <marker date="1445442201166" expanded="true" signature="955:1057" placeholder="UPDATE nmctr..." />
+            <marker date="1446286563829" expanded="true" signature="952:1054" placeholder="UPDATE nmctr..." />
           </folding>
         </state>
       </provider>
@@ -826,7 +995,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
           <folding>
-            <marker date="1445442199826" expanded="true" signature="975:1067" placeholder="INSERT INTO ..." />
+            <marker date="1446286585630" expanded="true" signature="997:1054" placeholder="SELECT membe..member..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1301" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1310" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1313" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1584:1676" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -844,10 +1017,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1445442199885" expanded="true" signature="791:860" placeholder="select disti..member..." />
-            <marker date="1445442199885" expanded="true" signature="994:1023" placeholder="SELECT membe..member..." />
-            <marker date="1445442199885" expanded="true" signature="4559:4629" placeholder="SELECT * FRO..registration..." />
-            <marker date="1445442199885" expanded="true" signature="5783:6038" placeholder="select membe..member..." />
+            <marker date="1446286585626" expanded="true" signature="809:878" placeholder="select disti..member..." />
+            <marker date="1446286585626" expanded="true" signature="1021:1050" placeholder="SELECT membe..member..." />
+            <marker date="1446286585626" expanded="true" signature="5351:5421" placeholder="SELECT * FRO..registration..." />
+            <marker date="1446286585626" expanded="true" signature="6813:7072" placeholder="select membe..member..." />
           </folding>
         </state>
       </provider>
@@ -857,7 +1030,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding>
-            <marker date="1445442201166" expanded="true" signature="955:1057" placeholder="UPDATE nmctr..." />
+            <marker date="1446286563829" expanded="true" signature="952:1054" placeholder="UPDATE nmctr..." />
           </folding>
         </state>
       </provider>
@@ -875,7 +1048,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
           <folding>
-            <marker date="1445442199826" expanded="true" signature="975:1067" placeholder="INSERT INTO ..." />
+            <marker date="1446286585630" expanded="true" signature="997:1054" placeholder="SELECT membe..member..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1301" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1310" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1313" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1584:1676" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -893,10 +1070,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="45" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="45" />
           <folding>
-            <marker date="1445442199885" expanded="true" signature="791:860" placeholder="select disti..member..." />
-            <marker date="1445442199885" expanded="true" signature="994:1023" placeholder="SELECT membe..member..." />
-            <marker date="1445442199885" expanded="true" signature="4559:4629" placeholder="SELECT * FRO..registration..." />
-            <marker date="1445442199885" expanded="true" signature="5783:6038" placeholder="select membe..member..." />
+            <marker date="1446286585626" expanded="true" signature="809:878" placeholder="select disti..member..." />
+            <marker date="1446286585626" expanded="true" signature="1021:1050" placeholder="SELECT membe..member..." />
+            <marker date="1446286585626" expanded="true" signature="5351:5421" placeholder="SELECT * FRO..registration..." />
+            <marker date="1446286585626" expanded="true" signature="6813:7072" placeholder="select membe..member..." />
           </folding>
         </state>
       </provider>
@@ -906,7 +1083,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
           <folding>
-            <marker date="1445442201166" expanded="true" signature="955:1057" placeholder="UPDATE nmctr..." />
+            <marker date="1446286563829" expanded="true" signature="952:1054" placeholder="UPDATE nmctr..." />
           </folding>
         </state>
       </provider>
@@ -924,7 +1101,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
           <folding>
-            <marker date="1445442199826" expanded="true" signature="975:1067" placeholder="INSERT INTO ..." />
+            <marker date="1446286585630" expanded="true" signature="997:1054" placeholder="SELECT membe..member..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1301" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1310" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1313" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1584:1676" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -942,10 +1123,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1445442199885" expanded="true" signature="791:860" placeholder="select disti..member..." />
-            <marker date="1445442199885" expanded="true" signature="994:1023" placeholder="SELECT membe..member..." />
-            <marker date="1445442199885" expanded="true" signature="4559:4629" placeholder="SELECT * FRO..registration..." />
-            <marker date="1445442199885" expanded="true" signature="5783:6038" placeholder="select membe..member..." />
+            <marker date="1446286585626" expanded="true" signature="809:878" placeholder="select disti..member..." />
+            <marker date="1446286585626" expanded="true" signature="1021:1050" placeholder="SELECT membe..member..." />
+            <marker date="1446286585626" expanded="true" signature="5351:5421" placeholder="SELECT * FRO..registration..." />
+            <marker date="1446286585626" expanded="true" signature="6813:7072" placeholder="select membe..member..." />
           </folding>
         </state>
       </provider>
@@ -955,7 +1136,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
           <folding>
-            <marker date="1445442201166" expanded="true" signature="955:1057" placeholder="UPDATE nmctr..." />
+            <marker date="1446286563829" expanded="true" signature="952:1054" placeholder="UPDATE nmctr..." />
           </folding>
         </state>
       </provider>
@@ -973,7 +1154,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
           <folding>
-            <marker date="1445442199826" expanded="true" signature="975:1067" placeholder="INSERT INTO ..." />
+            <marker date="1446286585630" expanded="true" signature="997:1054" placeholder="SELECT membe..member..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1301" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1310" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1313" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1584:1676" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -991,10 +1176,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
           <folding>
-            <marker date="1445442199885" expanded="true" signature="791:860" placeholder="select disti..member..." />
-            <marker date="1445442199885" expanded="true" signature="994:1023" placeholder="SELECT membe..member..." />
-            <marker date="1445442199885" expanded="true" signature="4559:4629" placeholder="SELECT * FRO..registration..." />
-            <marker date="1445442199885" expanded="true" signature="5783:6038" placeholder="select membe..member..." />
+            <marker date="1446286585626" expanded="true" signature="809:878" placeholder="select disti..member..." />
+            <marker date="1446286585626" expanded="true" signature="1021:1050" placeholder="SELECT membe..member..." />
+            <marker date="1446286585626" expanded="true" signature="5351:5421" placeholder="SELECT * FRO..registration..." />
+            <marker date="1446286585626" expanded="true" signature="6813:7072" placeholder="select membe..member..." />
           </folding>
         </state>
       </provider>
@@ -1012,7 +1197,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1445442199826" expanded="true" signature="975:1067" placeholder="INSERT INTO ..." />
+            <marker date="1446286585630" expanded="true" signature="997:1054" placeholder="SELECT membe..member..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1301" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1310" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1313" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1584:1676" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -1040,43 +1229,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/EndDuty.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.357143">
-          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
-          <folding>
-            <marker date="1445442201166" expanded="true" signature="955:1057" placeholder="UPDATE nmctr..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.892858">
-          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-          <folding>
-            <marker date="1445442199885" expanded="true" signature="791:860" placeholder="select disti..member..." />
-            <marker date="1445442199885" expanded="true" signature="994:1023" placeholder="SELECT membe..member..." />
-            <marker date="1445442199885" expanded="true" signature="4559:4629" placeholder="SELECT * FRO..registration..." />
-            <marker date="1445442199885" expanded="true" signature="5783:6038" placeholder="select membe..member..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/jilu.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.071428">
+        <state vertical-scroll-proportion="0.0">
           <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="dbDummy://dbtable:/44d102e4/b91c28d5-e020-407f-8766-43038ba19f8e/nmctracker..online">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b91c28d5-e020-407f-8766-43038ba19f8e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="57" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/44d102e4/b91c28d5-e020-407f-8766-43038ba19f8e/nmctracker..registration">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="19" column="52" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="52" />
+          <folding>
+            <marker date="1446286585626" expanded="true" signature="809:878" placeholder="select disti..member..." />
+            <marker date="1446286585626" expanded="true" signature="1021:1050" placeholder="SELECT membe..member..." />
+            <marker date="1446286585626" expanded="true" signature="5351:5421" placeholder="SELECT * FRO..registration..." />
+            <marker date="1446286585626" expanded="true" signature="6813:7072" placeholder="select membe..member..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/EndDuty.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding>
+            <marker date="1446286563829" expanded="true" signature="952:1054" placeholder="UPDATE nmctr..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/sublmitRegistion.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8403756">
-          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.565762">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
           <folding>
-            <marker date="1445442199826" expanded="true" signature="975:1067" placeholder="INSERT INTO ..." />
+            <marker date="1446286585630" expanded="true" signature="997:1054" placeholder="SELECT membe..member..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1301" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1310" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1246:1313" placeholder="SELECT onlin..online..." />
+            <marker date="1446286585630" expanded="true" signature="1584:1676" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

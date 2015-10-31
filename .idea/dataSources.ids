@@ -7,6 +7,10 @@
     </database-info>
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
     <schema name="" catalog="nmctracker"/>
+    <table name="count" schema="" catalog="nmctracker" type="VIEW">
+      <column name="memberName" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="5oiQ5ZGY5ZCN"/>
+      <column name="count" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
+    </table>
     <table name="issue" schema="" catalog="nmctracker" type="TABLE">
       <column name="idissue" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="issueText" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
@@ -34,10 +38,13 @@
       <primary-key name="PRIMARY" columns="idlog"/>
     </table>
     <table name="member" schema="" catalog="nmctracker" type="TABLE">
-      <column name="memberId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5oiQ5ZGYSUQ=" autoIncrement="true"/>
-      <column name="memberName" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="5oiQ5ZGY5ZCN"/>
-      <column name="department" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="5omA5bGe6YOo6Zeo"/>
+      <column name="memberId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="memberName" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="department" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="memberId"/>
+    </table>
+    <table name="online" schema="" catalog="nmctracker" type="VIEW">
+      <column name="memberName" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" remarks="5oiQ5ZGY5ZCN"/>
     </table>
     <table name="registration" schema="" catalog="nmctracker" type="TABLE">
       <column name="registraionId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="562+5Yiw5bqP5Y+3" autoIncrement="true"/>

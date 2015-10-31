@@ -15,7 +15,7 @@
 <body>
   <%
       Class.forName("com.mysql.jdbc.Driver");
-      String url="jdbc:mysql://127.0.0.1:3306/nmcTracker";
+      String url="jdbc:mysql://******:3306/nmcTracker";
       Connection connection;
       java.sql.Statement statement;
       connection= DriverManager.getConnection(url,"root","******");
