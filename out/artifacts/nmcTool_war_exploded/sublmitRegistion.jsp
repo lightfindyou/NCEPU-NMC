@@ -18,10 +18,10 @@
 <%
     String  name=new String(request.getParameter("name").getBytes("ISO8859-1"),"UTF-8");
     Class.forName("com.mysql.jdbc.Driver");
-    String url="jdbc:mysql://59.67.225.80:3306/nmcTracker";
+    String url="jdbc:mysql://********:3306/nmcTracker";
     Connection connection;
     java.sql.Statement statement;
-    connection= DriverManager.getConnection(url,"root","wgxh5197");
+    connection= DriverManager.getConnection(url,"root","****");
     statement=  connection.createStatement();
     String inputName=null;
     String status="签到失败,核对姓名/联系管理员";

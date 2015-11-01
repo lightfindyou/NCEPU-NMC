@@ -12,12 +12,12 @@
     request.setCharacterEncoding("UTF-8");
     response.setCharacterEncoding("UTF-8");
     Class.forName("com.mysql.jdbc.Driver").newInstance();
-    String url="jdbc:mysql://59.67.225.80:3306/nmctracker?useUnicode=true&characterEncoding=UTF-8";
+    String url="jdbc:mysql://**********:3306/nmctracker?useUnicode=true&characterEncoding=UTF-8";
     Connection con;
     ResultSet resultset;
     Statement stmt;
     List apartment=new ArrayList();
-    con=DriverManager.getConnection(url,"root","wgxh5197");
+    con=DriverManager.getConnection(url,"root","0000000");
     stmt=con.createStatement();
     resultset=stmt.executeQuery("select distinct department from nmctracker.member order by department; ");
     while(resultset.next()){
