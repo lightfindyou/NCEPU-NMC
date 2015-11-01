@@ -18,10 +18,10 @@
 <%
     String  name=new String(request.getParameter("name").getBytes("ISO8859-1"),"UTF-8");
     Class.forName("com.mysql.jdbc.Driver");
-    String url="jdbc:mysql://***********:3306/nmcTracker";
+    String url="jdbc:mysql://59.67.225.80:3306/nmcTracker";
     Connection connection;
     java.sql.Statement statement;
-    connection= DriverManager.getConnection(url,"root","******");
+    connection= DriverManager.getConnection(url,"root","wgxh5197");
     statement=  connection.createStatement();
     String inputName=null;
     String status="签到失败,核对姓名/联系管理员";
@@ -42,7 +42,7 @@
     }
     resultSetOnline.close();
 
-    if (contain.equals(name)){
+    if (name.equals(contain)){
         status="你已经在值班";
         if (!name.equals(online)){
             status="签到成功，开始值班";

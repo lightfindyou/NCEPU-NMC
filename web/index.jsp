@@ -12,12 +12,12 @@
     request.setCharacterEncoding("UTF-8");
     response.setCharacterEncoding("UTF-8");
     Class.forName("com.mysql.jdbc.Driver").newInstance();
-    String url="jdbc:mysql://*****:3306/nmctracker?useUnicode=true&characterEncoding=UTF-8";
+    String url="jdbc:mysql://59.67.225.80:3306/nmctracker?useUnicode=true&characterEncoding=UTF-8";
     Connection con;
     ResultSet resultset;
     Statement stmt;
     List apartment=new ArrayList();
-    con=DriverManager.getConnection(url,"root","******");
+    con=DriverManager.getConnection(url,"root","wgxh5197");
     stmt=con.createStatement();
     resultset=stmt.executeQuery("select distinct department from nmctracker.member order by department; ");
     while(resultset.next()){
@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/jquery-1.9.1.js"></script>
     <script src="js/jquery-ui.js"></script>
+    <script src="js/other.js"></script>
     <script src="js/alert.js"></script>
 
 
@@ -149,13 +150,8 @@
                 <li class="ui-widget">姓名&nbsp;:&nbsp;<input type="" name="name" id="tags" style="width:150px;" />
                 </li>
 
-                <%
-                    if (status==null){
-                        status="";
-                    }
-                %>
 
-                <li><p style="text-decoration-color: bisque"><%=status%></p>
+                <li><p style="text-decoration-color: bisque" id="status"><%=status%></p>
                 </li>
 
                 </select>
