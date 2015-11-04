@@ -5,7 +5,8 @@
 	<title>在此献给国庆的三天</title>
 	<link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="js/1.js" />
+    <script src="js/jquery-1.9.1.js"></script>
+	<script src="js/j-display.js"></script>
      <script type="text/javascript">
     function test1 (){
 	document.getElementById('div1').style.display="none";
@@ -133,57 +134,35 @@ function change2 (){
 			<li>记&nbsp;&nbsp;录&nbsp;&nbsp;人&nbsp;：<input type="text" /></li>
 		</ul>
 	<div class="right_5">
-		<div class="right_5_1" id="solve_1">
-		<ul>
-			<li><input type="radio" name="reason" value="" />认证失败，无法链接认证服务器</li>
-			<li><input type="radio" name="reason" value="" />动态IP地址类型绑定错误</li>
-			</ul>
-			<ul>
-			<li><input type="radio" name="reason" value="" />获取IP信息失败</li>
-			<li><input type="radio" name="reason" value="" />在线用户数量达到上限</li>
-			</ul>
-			<ul>
-			<li><input type="radio" name="reason" value="" />IP/MAC地址绑定错误</li>
-			<li><input type="radio" name="reason" value="" />与已有IP地址绑定错误</li>
-		</ul>
-			<ul>
-				<li><input type="radio" name="reason" value="" />密码错误/忘记密码</li>
-				<li><input type="radio" name="reason" value="" />找不到网卡</li>
-				</ul>
-				<ul>
-				<li><input type="radio" name="reason" value="" />仿冒MAC地址上网</li>
-				<li><input type="radio" name="reason" value="" />通过认证，但没有网速</li>
-				</ul>
-				<ul>
-				<li><input type="radio" name="reason" value="" />其他</li>
-				<li><div class="right_5_button"><a href="#top" onclick="mySubmit5 ()" >登记</a></div><div class="right_5_button_2"><a href="javascript:change2 ()">返回</a></div></li>
-			</ul>
-		</div>
+		
 		<div class="right_5_2" id="solve_2">
 			<ul>
-				<li><input type="radio" name="solve" value="" />动态IP地址类型绑定错误</li>
-				<li><input type="radio" name="solve" value="" />动态IP地址类型绑定错误</li>
+				<li style="border-top:solid 2px black"><input type="radio" name="solve" value="" id="reason_1" />动态IP地址类型绑定错误</li>
+				<li style="border-top:solid 2px black"><input type="radio" name="solve" value="" id="reason_2"/>动态IP地址类型绑定错误</li>
 			</ul>
 			<ul>
-				<li><input type="radio" name="solve" value="" />动态IP地址类型绑定错误</li>
-				<li><input type="radio" name="solve" value="" />动态IP地址类型绑定错误</li>
+				<li><input type="radio" name="solve" value="" id="reason_1" />动态IP地址类型绑定错误</li>
+				<li><input type="radio" name="solve" value="" id="reason_2" />动态IP地址类型绑定错误</li>
 			</ul>
 			<ul>
-				<li><input type="radio" name="solve" value="" />动态IP地址类型绑定错误</li>
-				<li><input type="radio" name="solve" value="" />动态IP地址类型绑定错误</li>
+				<li><input type="radio" name="solve" value="" id="reason_3" />动态IP地址类型绑定错误</li>
+				<li><input type="radio" name="solve" value="" id="reason_4" />动态IP地址类型绑定错误</li>
 			</ul>
 			<ul>
-				<li><input type="radio" name="solve" value="" />动态IP地址类型绑定错误</li>
-				<li><input type="radio" name="solve" value="" />动态IP地址类型绑定错误</li>
+				<li><input type="radio" name="solve" value="" id="reason_5" />动态IP地址类型绑定错误</li>
+				<li><input type="radio" name="solve" value="" id="reason_6" />动态IP地址类型绑定错误</li>
 			</ul>
 			<ul>
-				<li><input type="radio" name="solve" value="" />动态IP地址类型绑定错误</li>
-				<li><input type="radio" name="solve" value="" />动态IP地址类型绑定错误</li>
+				<li><input type="radio" name="solve" value="" id="reason_7" />动态IP地址类型绑定错误</li>
+				<li><input type="radio" name="solve" value="" id="reason_8" />动态IP地址类型绑定错误</li>
 			</ul>
 			<ul>
-				<li><input type="radio" name="solve" value="" />动态IP地址类型绑定错误</li>
-				<li>是否解决问题？<a href="javascript:change1 ()">是</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" >否</a></li>
+				<li><input type="radio" name="solve" value="" id="reason_9" />动态IP地址类型绑定错误</li>
+				<li></li>
 			</ul>
+		</div>
+		<div class="right_5_1" id="solve_1">
+		
 		</div>
 		</div>
 
