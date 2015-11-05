@@ -12,7 +12,6 @@
     <title></title>
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="js/1.js" />
   <script type="text/javascript">
     function test1 (){
       document.getElementById('div1').style.display="none";
@@ -142,8 +141,8 @@
         <div class="right_5">
           <div class="right_5_1" id="solve_1">
             <ul>
-              <li><input type="radio" name="reason" value="" />认证失败，无法链接认证服务器</li>
-              <li><input type="radio" name="reason" value="" />动态IP地址类型绑定错误</li>
+              <li style="boder-top:soild 2px"><input type="radio" name="reason" value="" />认证失败，无法链接认证服务器</li>
+              <li style="boder-top:soild 2px"><input type="radio" name="reason" value="" />动态IP地址类型绑定错误</li>
             </ul>
             <ul>
               <li><input type="radio" name="reason" value="" />获取IP信息失败</li>
