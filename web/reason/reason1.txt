@@ -36,3 +36,10 @@
 
                                 </li>
                             </ul>
+ 			<div class="right_5_b">
+                                 <ul>
+                                    <li ><div class="right_1_button"><a  href="">返回</a></div></li>
+                                    <li ><div class="right_1_button"><a href="">未解决</a></div></li>
+                                    <li ><div class="right_1_button"><a href="">登记</a></div></li><!--用的right_1的按钮样式 维护时注意 --!>
+                                </ul>
+                        </div>
