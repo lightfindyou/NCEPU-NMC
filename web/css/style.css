@@ -190,7 +190,8 @@ body {
 	position: relative;
 }
 .right_2_1 li {
-	    height: 40px;
+	    height: 65px;
+	    line-height: 65px;
 }
 .right_2_2 {
 	background: #fff;
@@ -200,8 +201,10 @@ body {
 	width: 17.25%;
 	padding-left: 3%;
 	line-height: 30px;
-	text-align: center;
-
+	text-align: left;
+}
+.right_2_3 li{
+	height: 20px;
 }
 
 .right_2_button {
@@ -210,7 +213,7 @@ body {
 	background: #03a9f4;
 	position: absolute;
     margin-left: 66%;
-    margin-top: 150px; 
+    margin-top: 125px; 
 	-webkit-box-shadow:0 0 3px rgba(0,0,0,0.35);  
   -moz-box-shadow:0 0 3px rgba(0,0,0,0.35);  
   box-shadow:0 0 3px rgba(0,0,0,0.35);  
@@ -223,12 +226,12 @@ body {
 	text-align: center;
 	line-height: 40px;
 	min-width: 90px;
+	font-size: 18px;
 }
 
 .right_3 {
 	top: 40px;
 	width: 81%;
-	max-width: 1800px;
 	min-width: 600px;
 	margin: 0 auto;
 	position: relative;
@@ -247,19 +250,20 @@ body {
 }
 .right_3_1 {
 	position: relative;
-
+	width: 100%;
 }
 .right_3_2 {
 position: relative;
-max-height: 300px;
+width: 100%;
 }
 .right_3_2 li {
-	width: 17.25%;
+	width: 20.25%;
 	height: 30px;
 	line-height: 30px;
-	padding-left: 3%;
+	padding-left: 0;
 	text-align: center;
 }
+
 .right_3_3 li {
 	line-height: 65px;
 	width: 40.5%;

@@ -3,27 +3,37 @@
   User: Leong
   Date: 2015/10/18
   Time: 1:02
+
+  Updated by Howard.
+  Date: 2015/12/07
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" isErrorPage="true" errorPage="index.jsp" %>
-<%@ page import="java.sql.*,java.util.*,java.lang.*" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page pageEncoding="UTF-8" %>
+<%@ page import="java.lang.*" %>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.util.ArrayList" %>
+
+<%!
+    Connection conn;
+    Statement statement;
+    ResultSet resultSetForAll;
+
+    String url = "jdbc:mysql://59.67.225.80:3306/nmctracker";
+    String username = "root";
+    String password = "wgxh5197";
+%>
+
 <%
-    request.setCharacterEncoding("UTF-8");
-    response.setCharacterEncoding("UTF-8");
-    Class.forName("com.mysql.jdbc.Driver").newInstance();
-    String url="jdbc:mysql://**********:3306/nmctracker?useUnicode=true&characterEncoding=UTF-8";
-    Connection con;
-    ResultSet resultset;
-    Statement stmt;
-    List apartment=new ArrayList();
-    con=DriverManager.getConnection(url,"root","0000000");
-    stmt=con.createStatement();
-    resultset=stmt.executeQuery("select distinct department from nmctracker.member order by department; ");
-    while(resultset.next()){
-        apartment.add(resultset.getString(1));
+    try {
+        Class.forName("com.mysql.jdbc.Driver");
+        conn = DriverManager.getConnection(url, username, password);
+
+        statement = conn.createStatement();
+    }catch (Exception e){
+        out.print("<script>alert('连接服务器失败');</script>");
     }
-    ResultSet resultSetOfMemberName=stmt.executeQuery("SELECT memberName FROM member");
 %>
 <html>
 <head>
@@ -33,37 +43,10 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/jquery-1.9.1.js"></script>
-    <script src="js/jquery-ui.js"></script>
     <script src="js/other.js"></script>
-    <script src="js/alert.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script type="text/javascript"></script>
 
-
-
-
-    <%
-        String status= (String) session.getAttribute("status");
-        System.out.println(status);
-        session.invalidate();
-    %>
-
-    <%--<%--%>
-
-    <%--//      String status= (String) session.getAttribute("status");--%>
-    <%--//      session.invalidate();--%>
-    <%--//      System.out.println("status:"+status);--%>
-    <%--//      System.out.println(status.equals(new String ("true")));--%>
-
-    <%--if (status.equals(new String ("true"))){%>--%>
-    <%--<script type="text/javascript">--%>
-    <%--sucess();--%>
-    <%--</script>--%>
-    <%--<%}--%>
-    <%--else if (status.equals(new String ("false"))) {%>--%>
-    <%--<script type="text/javascript">--%>
-    <%--fail();--%>
-    <%--</script>--%>
-    <%--<%}--%>
-    <%--%>--%>
     <script type="text/javascript">
         var winWidth = 0;
         var winHeight = 0;
@@ -95,11 +78,11 @@
     </script>
     <script type="text/javascript">
         function mySubmit1 () {
-            document.forms["form1"].action="sublmitRegistion.jsp";
+            document.forms["form1"].action="submit.jsp";
             document.form1.submit();
         }
         function mySubmit2 () {
-            document.forms["form2"].action="EndDuty.jsp";
+            document.forms["form2"].action="endDuty.jsp";
             document.form2.submit();
         }
     </script>
@@ -107,10 +90,16 @@
         $(function() {
             var availableTags = [
                 <%
-                  while (resultSetOfMemberName.next()){
-                    out.println("\""+resultSetOfMemberName.getString(1)+"\""+",");
+                try{
+                    resultSetForAll = statement.executeQuery("SELECT memberName FROM member");
+                    while (resultSetForAll.next()){
+                %>
+                <%="\""+ resultSetForAll.getObject(1).toString() + "\"" + ","%>
+                <%
                   }
-                  out.println("\""+"TEST"+"\"");
+                }catch (Exception e){
+                    out.print("<script>alert('拉取 availableTags 失败');</script>");
+                }
                 %>
             ];
             $( "#tags" ).autocomplete({
@@ -131,94 +120,125 @@
     <div class="left_list">
         <ul>
             <li><a href="index.jsp">签到</a></li>
-            <li><a href="">未完成事项</a></li>
+            <!-- <li><a href="">未完成事项</a></li>
 
             <li><a href="jilu.jsp">新问题记录</a></li>
-            <li><a href="">问题总览</a></li>
+            <li><a href="">问题总览</a></li> -->
         </ul>
     </div>
     <div class="left_bottom">
         <ul>
-            <li><a href="">关于</a></li>
+            <!-- <li><a href="">关于</a></li> -->
         </ul>
     </div>
 </div>
 <div class="right">
     <div class="right_1">
-        <form name="form1" method="get">
+        <form name="form1" method="post">
             <ul>
-                <li class="ui-widget">姓名&nbsp;:&nbsp;<input type="" name="name" id="tags" style="width:150px;" />
-                </li>
-
-
-                <li><p style="text-decoration-color: bisque" id="status"><%=status%></p>
-                </li>
-
-                </select>
+                <li class="ui-widget">姓名&nbsp;:&nbsp;<input type="" name="submitName" id="tags"  style="width:150px;" />
+                <li></li>
                 <li><div class="right_1_button"><a href="javascript:mySubmit1 ()">开始值班</a></div></li>
             </ul>
         </form>
     </div>
 
+    <%!
+        ResultSet resultSetOnline ;
+        ArrayList<String> online;
+        int size;
+        int rollNum;
+        int rowNum;
+    %>
     <%
-        String sqlqueryOnDuty="SELECT * FROM nmctracker.registration where lastRegist is null limit 9;";
-        ResultSet resultSet =stmt.executeQuery(sqlqueryOnDuty);
-        List list=new ArrayList();
-        while (resultSet.next()){
-            list.add(resultSet.getString(2));
+        try{
+            resultSetOnline = statement.executeQuery("SELECT * FROM online");
+            online = new ArrayList<String>();
+
+            while (resultSetOnline.next())
+                online.add(resultSetOnline.getObject(1).toString());
+
+            size = online.size();
+            rollNum = size/3;
+            rowNum = size%3;
+        }catch (Exception e){
+            out.print("<script>alert('拉取正在值班失败');</script>");
         }
-        while (list.size()!=12){
-            list.add("***");
-        }
+
     %>
 
     <div class="right_2">
         <div class="right_2_1">
             <ul><li>正在值班&nbsp;:&nbsp;</li></ul><li></li><li></li></div>
         <div class="right_2_2">
-            <form name="form2" action="">
+            <form name="form2" method="post">
 
                 <%
-                    for (int i=0;i<4;i++){%>
+                    if (size == 0){
+                %>
+                <li>暂无</li><li></li><li></li><li></li>
+                <%
+                }else {
+                    for (int i = 0; i < rollNum; i++){
+                %>
                 <ul>
-                    <%for (int j=0;j<3;j++){%>
-
-                    <li>
-                        <input type='checkbox' name="name" value="<%=list.get(i*3+j)%>">
-                        <%=list.get(i*3+j)%>
-                    </li>
+                    <%for (int j = 0; j < 3; j++){%>
+                    <li><input type='checkbox' name='endName' value=<%=online.get(i*3+j)%>><%=online.get(i*3+j)%></li>
                     <%}%>
                     <li></li>
                 </ul>
-                <%}
+                <%
+                    }
+                    for (int i = 0; i < rowNum; i++){
                 %>
-
+                <ul>
+                    <li><input type='checkbox' name='endName' value=<%=online.get(size-rowNum+i)%>><%=online.get(size-rowNum+i)%></li>
+                    <%
+                        };
+                        for (int j = 0; j < 4-rowNum; j++){
+                    %>
+                    <li></li>
+                    <%}%>
+                </ul>
 
                 <div class="right_2_button"><a href="javascript:mySubmit2 ()" >结束值班</a></div>
+                <%}%>
             </form>
-        </div>
-        <div class="right_2_3"><ul><li></li><li></li><li></li></ul></div>
-    </div>
+        </div>		</div>
+
     <div class="right_3">
         <div class="right_3_1">
             <ul><li>最近值班&nbsp;:&nbsp;</li></ul>
-            <li></li><li><a href="index.jsp">上一页</a>&nbsp;&nbsp;<a href="index.jsp">下一页</a></li>
+            <li></li><li><a href=""> </a>&nbsp;&nbsp;<a href=""> </a></li>
         </div>
-
-        <%
-            String sqlQueryDuty="select member.department,registration.memberName,registration.firstRegist,registration.lastRegist from member,registration\n" +
-                    "where member.memberName=registration.memberName AND lastRegist is NOT null ORDER BY registraionId DESC LIMIT 9";
-            ResultSet res=stmt.executeQuery(sqlQueryDuty);
-        %>
 
         <div class="right_3_2">
             <ul><li>所在部门</li><li>姓名</li><li>开始时间</li><li>结束时间</li></ul>
-            <%
-                while(res.next()){
-                    out.println("<ul><li>"+res.getString(1)+"</li><li>"+res.getString(2)+"</li><li>"+res.getString(3)+"</li><li>"+res.getString(4)+"</li></ul>");
-                }
-                con.close();
+
+            <%!
+                ResultSet resultSetHistory;
+                String par2 = "MM-dd HH:mm";
+                SimpleDateFormat sdf2 = new SimpleDateFormat(par2);
             %>
+            <%
+                try {
+                    resultSetHistory = statement.executeQuery(
+                            "SELECT department, member.memberName, firstRegist, lastRegist " +
+                                    "FROM member, registration " +
+                                    "WHERE member.memberName=registration.memberName " +
+                                    "AND lastRegist is NOT null " +
+                                    "ORDER BY registraionId DESC LIMIT 9");
+                    while (resultSetHistory.next()){
+            %>
+            <ul><li><%=resultSetHistory.getString(1)%></li><li><%=resultSetHistory.getString(2)%></li><li><%=sdf2.format(resultSetHistory.getObject(3))%></li><li><%=sdf2.format(resultSetHistory.getObject(4))%></li></ul>
+            <%
+                    }
+                } catch (Exception e) {
+                    out.print("<script>alert('拉取最近值班失败');</script>");
+                }
+
+            %>
+
         </div>
         <div class="right_3_3">
             <ul><li></li><li></li></ul>

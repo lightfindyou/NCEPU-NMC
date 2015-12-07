@@ -1,38 +1,50 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Leong
-  Date: 2015/10/18
-  Time: 20:30
+  User: Howard
+  Date: 12/05/2015
+  Time: 15:04
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="java.lang.*" %>
 <%@ page import="java.sql.*" %>
-<%@ page pageEncoding="UTF-8" %>
+
 <html>
 <head>
     <title></title>
 </head>
 <body>
-  <%
-      Class.forName("com.mysql.jdbc.Driver");
-      String url="jdbc:mysql://******:3306/nmcTracker";
-      Connection connection;
-      java.sql.Statement statement;
-      connection= DriverManager.getConnection(url,"root","******");
-      statement=  connection.createStatement();
 
+<%!
+    Connection conn;
+    Statement statement;
 
-    request.setCharacterEncoding("UTF-8");
-//    String[] name=new String(request.getParameterValues("name"))
-    String[] name=request.getParameterValues("name");
-    for (int i=0;i<name.length;i++){
-        String temp  = new String(name[i].getBytes("ISO8859-1"),"UTF-8");
-      System.out.println(temp);
-        String insertSql="UPDATE nmctracker.registration SET lastRegist=now() WHERE memberName='"+temp+"' AND lastRegist is NULL;";
-        statement.executeUpdate(insertSql);
+    String url = "jdbc:mysql://59.67.225.80:3306/nmctracker";
+    String username = "root";
+    String password = "wgxh5197";
+%>
+
+<%
+    response.setCharacterEncoding("utf-8");
+    try {
+        Class.forName("com.mysql.jdbc.Driver");
+        conn = DriverManager.getConnection(url, username, password);
+        statement = conn.createStatement();
+
+        String[] name = request.getParameterValues("endName");
+
+        for (String i:name) {
+            String temp = new String(i.getBytes("ISO8859-1"), "UTF-8");
+
+            statement.executeUpdate("UPDATE nmctracker.registration SET lastRegist=now() WHERE memberName='" + temp + "'");
+        }
+        out.print("<script>alert('结束值班成功');location.href='index.jsp';</script>");
+
+        conn.close();
+    }catch (Exception e){
+        out.print("<script>alert('结束值班失败');location.href='index.jsp';</script>");
+
     }
-    System.out.println(name.length);
-      connection.close();
-  %>
+%>
 </body>
 </html>
