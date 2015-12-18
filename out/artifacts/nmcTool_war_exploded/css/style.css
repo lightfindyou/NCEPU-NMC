@@ -13,6 +13,7 @@ body {
     background-repeat: no-repeat;
     -webkit-background-size: 100%;
     background-size: 100%;
+    background-position: center;
 
 }
 .head {
@@ -69,6 +70,9 @@ body {
 }
 .right input {
 	width: 40%; 
+}
+.right select {
+    width: 30%;
 }
 .right_1 {
 	width: 81%;
@@ -250,8 +254,8 @@ body {
 
 }
 .right_3_2 {
-position: relative;
-max-height: 300px;
+    position: relative;
+    max-height: 300px;
 }
 .right_3_2 li {
 	width: 17.25%;
@@ -314,18 +318,6 @@ max-height: 300px;
  	-moz-box-shadow:0 0 3px rgba(0,0,0,0.35);  
  	box-shadow:0 0 3px rgba(0,0,0,0.35);  
 }
-.right_5_button_2 {
-	width: 9%;
-	height: 40px;
-	background: #03a9f4;
-	position: absolute;
-	margin-top: -55px;
-	margin-left: 20%;
-	min-width: 90px;
-	-webkit-box-shadow:0 0 3px rgba(0,0,0,0.35);  
- 	-moz-box-shadow:0 0 3px rgba(0,0,0,0.35);  
- 	box-shadow:0 0 3px rgba(0,0,0,0.35);  
-}
 
 .right_5_button a{
 	display: block;
@@ -340,6 +332,28 @@ max-height: 300px;
 	text-decoration: none;
 	text-align: center;
 	line-height: 40px;
+}
+.right_5_b li {
+    width: 30%;
+    float: left;
+    list-style: none;
+    background: #fff;
+    display: block;
+    height: 60px;
+    font-size: 18px;
+    line-height: 50px;
+    padding-left: 4%;
+}
+.right_5_b li+li {
+    width: 30%;
+    float: left;
+    list-style: none;
+    background: #fff;
+    display: block;
+    height: 60px;
+    font-size: 18px;
+    line-height: 50px;
+    padding-left: 3%;
 }
 /* 检索 */
 /*! jQuery UI - v1.10.4 - 2014-01-17
