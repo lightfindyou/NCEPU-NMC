@@ -1,0 +1,274 @@
+body,
+html,
+div{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F5F5F5;
+}
+
+
+/* logo和导航栏 */
+
+.title {
+    background: url(../pictures/0.png) no-repeat right #4B6AD3;
+    width: 100%;
+    min-height: 64px;
+    min-width: 1000px;
+}
+
+.title_1 {
+    background: url(../pictures/1.png) no-repeat right #00796B;
+    color:#05CBB4;
+}
+.title_2{
+    background: url(../pictures/2.png) no-repeat right #F44336;
+}
+.title_3{
+    background: url(../pictures/3.png) no-repeat right #FFC107;
+}
+.title-logo {
+    padding: 15px 80px;
+}
+
+.title-nav {
+    margin-left: 235px;
+}
+
+.title-nav_a {
+    display: inline-block;
+    color: #A9B7E9;
+    padding: 14px 30px;
+    font-family: Arial, "Microsoft YaHei", 黑体, 宋体, sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    border-bottom: 2px rgba(0,0,0,0) solid;
+}
+em {
+    font-size: 10px;
+    background: #ea4f35;
+    padding: 3px 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;        
+    font-style: normal;
+    color: #fff;
+    margin-top:-5px;
+    line-height: 10px;
+    height: 10px;       
+    float:right;
+}
+
+/* 追加样式 */
+
+.title-nav_a_add {
+    color: white;
+    border-bottom: 2px #FE3F81 solid;
+}
+.daiban{
+     border-bottom: 2px #249BF2 solid;
+}
+
+/* 主体部分 */
+
+.content {
+    padding-top: 30px;
+}
+
+/* 选项卡 */
+
+.tab {
+    display: none;
+}
+
+.tab-first {
+    display: block;
+}
+
+
+/* 表单样式，文字样式，hover样式 */
+
+.table-shape {
+   
+    width: 1150px;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .12);
+    border-collapse: collapse;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+.table-shape td{
+    padding: 8px 24px;   
+}
+.table-text {
+     font-size: 16px;
+    font-family: Arial, "Microsoft YaHei", 黑体, 宋体, sans-serif;
+}
+
+.table-hover:hover {
+    background: #EEE;
+    transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+    -o-transition: 0.3s;
+}
+/* 按钮样式 */
+.mdl-button {
+  background: transparent;
+  border: none;
+  border-radius: 2px;
+  color: rgb(0,0,0);
+  position: relative;
+  height: 37px;
+  width: 90px;
+  margin: 0;
+  display: inline-block;
+  font-family:"微软雅黑";
+  font-size:15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0;
+  overflow: hidden;
+  will-change: box-shadow;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 37px;
+  vertical-align: middle; 
+
+}
+.mdl-button:hover{
+    background-color:#58ADF2;
+}
+  .mdl-button:active {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    background-color: rgba(3,118,211,0.80); }
+
+.mdl-button--fab {
+   color: rgb(255,255,255);
+   background-color: rgb(33,150,243); } 
+
+   table button{
+    float: right;
+   }
+
+/* 第一个选项卡的第一栏 */
+
+#scroll-tab-1 .tbody-td tr td{
+    text-align: center;
+    display: inline-block;
+    width:232px;
+} 
+#table_1 {
+    height: 80px;
+}
+#table_1 td{
+padding: 32px 24px;
+}
+#onwork-input {
+    border: none;
+    border-bottom: 1px rgba(0, 0, 0, .26) solid;
+    width: 170px;
+    height: 18px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0)!important;
+    outline: none;
+}
+
+.onwork-input {
+    border-bottom: 1px #3f51b5 solid;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+
+#onwork-input-label {
+    position: absolute;
+    color: rgba(0, 0, 0, .26);
+    width: 200px;
+    height: 38px;
+}
+
+#onwork-input-label:after {
+    width: 10px;
+    height: 2px;
+    content: "";
+    left: 45%;
+    bottom: 16px;
+    position: absolute;
+    background-color: #3f51b5;
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    visibility: hidden;
+}
+
+.is-focused #onwork-input-label:after {
+    width: 100%;
+    left: 0;
+    visibility: visible;
+    bottom: -1.5px;
+}
+
+
+/* table之间间隔 */
+
+.interval {
+    margin-top: 30px;
+}
+/* 第一个选项卡第二栏 */
+#table-2{
+    height:120px;
+}
+/* 第一个选项卡的第三栏 */
+#table3-title td{
+    padding-bottom: 1px;
+}
+/* 第二个选项卡 */
+#scroll-tab-2 table{
+    width:100%;
+    padding-left: 24px;
+}
+#scroll-tab-2 td{
+    padding: 10px 0;
+}
+#next,#return{
+    background-color:#009688;
+    margin-right: 50px;
+}
+#next:hover,#return:hover{
+    background-color:#05B4A5;
+}
+#next:active,#return:active{
+    background-color:#007E74;
+}
+#table2-2 td,#table2-3 td{
+    padding-left: 100px;
+    width:50%;
+}
+.other,#table2-1 input{
+    border: none;
+    border-bottom: 2px rgba(86,179,90,1) solid;
+    width: 200px;
+    height: 21px;
+    background: rgba(255, 255, 255, 0)!important;
+    outline: none;
+}
+#td-button button{
+    margin-right: 15px;
+}
+#still,#finish{
+    background-color:#D1463B;
+}
+#still:hover,#finish:hover{
+    background-color:#E8675D;
+}
+#still:active,#finish:active{
+    background-color:#BC4036;
+}
